@@ -6,6 +6,11 @@ An example of a program that can run stand-alone on Bela (or any Linux embedded 
 receive OSC and set LEDs on a Neopixel-like strip.
 It comes with a Pd example of a 16-segment VU-meter and a basic SuperCollider example.
 
+------
+This runs correctly on the classic Bela board P8.35 and its 3.3v output, but see below for possible modifications in other set-ups
+------
+
+//
 If running this on BelaMini, use P2.25 as the data line to the NeoPixels. On Bela, instead, you need to make a possibly
 risky modification to free up the relevant pin P9.30, which will in turn disable the audio inputs. Such mod involves
 bending out pin P9.30 (which is normally the data line coming from the codec's ADC). This is a potentially destructive
