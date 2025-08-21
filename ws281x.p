@@ -170,7 +170,7 @@ _LOOP:
 
 WORD_LOOP:
 
- MOV r6, 24
+ MOV r6, 32
 
  BIT_LOOP:
   SUB r6, r6, 1

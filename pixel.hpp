@@ -19,7 +19,7 @@ struct pixel_t {
   uint8_t r;
   uint8_t g;
   uint8_t a;
-  pixel_t(uint8_t _r, uint8_t _g, uint8_t _b) : b(_b), r(_r), g(_g) {};
+  pixel_t(uint8_t _r, uint8_t _g, uint8_t _b, uint8_t _a) : b(_b), r(_r), g(_g), a(_a) {};
 } __attribute__((__packed__));
 
 /** Command structure shared with the PRU.

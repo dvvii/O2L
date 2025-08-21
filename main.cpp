@@ -130,7 +130,7 @@ int parseMessage(oscpkt::Message msg, const char* address, void*)
 				for (uint32_t p = 0; p < kNumLeds; p++)
 				{
 					size_t k = p * kBytesPerRgb;
-					strip.setPixelColor(p, PixelBone_Pixel::Color(gRgb[k + 0], gRgb[k + 1], gRgb[k + 2]));
+					pixel_t color { gRgb[k + 2], gRgb[k + 0], 0, gRgb[k + 1] };
 				}
 				strip.show();
 			}
